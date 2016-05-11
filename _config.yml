@@ -3,8 +3,8 @@
 # Site wide configuration
 ####################################
 #
-title:       "Leonids Jekyll theme"
-description: "Clean Jekyll blog theme called Leonids."
+title:       "Grace Lee"
+description: "My journey to becoming a web developer."
 url:         # the base hostname & protocol for your site
 
 #
@@ -33,8 +33,8 @@ kramdown:
 owner:
   name: Your name
   avatar: avatar.jpg
-  job: "Your job"
-  bio: "Write about yourself"
+  job: "Artist, dreamer, and web developer."
+  bio: "The fishermen know that the sea is dangerous and the storm terrible, but they have never found these dangers sufficient reason for remaining ashore. - Vincent Van Gogh"
   email:
   disqus-shortname:
   twitter:
@@ -46,11 +46,11 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: glee38
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
-  instagram: #username
+  instagram: foundbygrace_
   lastfm: #username
   tumblr: #username
   pinterest: #username
