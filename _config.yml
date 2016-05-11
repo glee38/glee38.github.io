@@ -31,10 +31,10 @@ kramdown:
 ####################################
 #
 owner:
-  name: Your name
+  name: Grace Lee
   avatar: avatar.jpg
-  job: "Artist, dreamer, and web developer."
-  bio: "The fishermen know that the sea is dangerous and the storm terrible, but they have never found these dangers sufficient reason for remaining ashore. - Vincent Van Gogh"
+  job: "artist & web developer."
+  bio: "The fishermen know that the sea is dangerous and the storm terrible, but they have never found these dangers sufficient reason for remaining ashore. - Van Gogh"
   email:
   disqus-shortname:
   twitter:
