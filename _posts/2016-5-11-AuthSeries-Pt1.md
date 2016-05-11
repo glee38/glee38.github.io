@@ -4,7 +4,6 @@ title: AuthSeries Pt. 1: Authentication Basics
 categories: Development
 excerpt: "Part 1 of the Rails Authentication Series - Cookies and Sessions"
 comments: true
-draft: false
 ---
 
 # AuthSeries Pt. 1: Authentication Basics
