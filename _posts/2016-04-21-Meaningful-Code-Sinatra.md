@@ -33,8 +33,81 @@ After a much thought, I finally came up with an idea for my Sinatra app. I wante
 
 Nonprofit organizations that did not have the resources to hire developers would upload their web/mobile development needs in the form of "projects" to the website, while developers could sign up and volunteer to work on a project (or projects) of their choosing. My hope was that by creating a platform to bring people together, we would, together, make a meaningful and lasting difference in the lives of others.
 
+## Features
+Once I had my idea, it was time to set it into motion. I began by whiteboarding the basics of my application:
+
+#### As a guest (someone who is not logged in or signed up):
+
+1. Navigation Bar
+  + About Us
+    + Who we are
+    + Our mission
+  + Our nonprofits
+  + Our developers
+2. Index page
+  + Tell us who you are:
+    + Developer
+      + sign up
+      + login
+    + Nonprofit
+      + sign up
+      + login
+
+#### As a nonprofit:
+1. Homepage
+  + View all available developers
+  + Projects due today
+  + Open projects
+  + Closed projects
+2. Your Profile 
+  + includes tagline, projects, our cause, donate, edit your profile
+3. Your Projects
+  +  View projects
+    +  Can click on project to see:
+      +  Title
+      +  Description
+      +  Due date
+      +  Current developers working on said project
+    +  Manage your projects
+    +  Delete your projects
+    +  Projects due today, open, and closed
+  +  Manage projects
+  +  Delete projects
+3. Messages
+  + Received messages
+  + Sent messages
+  + New message
+  + All messages
+4. Create New Project
+5. More
+  + All nonprofits
+  + All projects
+  + All developers
+  + Your developers
+  + Logout 
+
+#### As a developer:
+1. Homepage
+  + View all available projects
+  + Projects due today
+  + Open projects
+  + Close projects
+2.  Your Profile
+  + includes github, about me, your projects, edit your profile
+3. Messages
+  + Received messages
+  + Sent messages
+  + New message
+  + All messages
+4. More
+  + All nonprofits
+  + All projects
+  + All developers
+  + Your nonprofits
+  + Logout 
+
 ## Beginning the Labor
-Once I had my idea, it was time to set it into motion. I began by whiteboarding the basics of my application with the following associations and attributes:
+Next, it was time to lay out my associations and validations for each model.
 
 #### 1. Developer
 The developers would not be able to create/edit projects posted by the nonprofits, but they would be able to "take" projects to work on.
