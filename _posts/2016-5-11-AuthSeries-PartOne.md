@@ -6,8 +6,6 @@ excerpt: "Part 1 of the Rails Authentication Series - Cookies and Sessions"
 comments: true
 ---
 
-# AuthSeries Pt. 1: Authentication Basics
-
 Welcome to **Part 1** of AuthSeries, a series dedicated to authentication in Rails. WOO! In today's post, I will go over a few programming concepts that are crucial in understanding authentication as a whole.
 
 #### Our goal today:
