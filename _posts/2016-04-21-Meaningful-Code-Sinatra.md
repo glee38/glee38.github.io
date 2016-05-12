@@ -40,8 +40,8 @@ Once I had my idea, it was time to set it into motion. I began by whiteboarding 
 
 1. Navigation Bar
   + About Us
-      + who we are
-      + our mission
+      + Who we are
+      + Our mission
   + Our nonprofits
   + Our developers
 2. Index page
@@ -55,32 +55,32 @@ Once I had my idea, it was time to set it into motion. I began by whiteboarding 
 
 #### As a nonprofit:
 
-+ Homepage
+1. Homepage
   + View all available developers
   + Projects due today
   + Open projects
   + Closed projects
-+ Your Profile 
+2. Your Profile 
   + includes tagline, projects, our cause, donate, edit your profile
-+ Your Projects
-  +  View projects
-    +  Can click on project to see:
-      +  title
-      +  description
-      +  due date
-      +  current developers working on said project
-    +  Manage your projects
-    +  Delete your projects
-    +  Projects due today, open, and closed
+3. Your Projects
+  + View projects
+    + Can click on project to see:
+      + title
+      + description
+      + due date
+      + current developers working on said project
+    + Manage your projects
+    + Delete your projects
+    + Projects due today, open, and closed
   +  Manage projects
   +  Delete projects
-3. Messages
+4. Messages
   + Received messages
   + Sent messages
   + New message
   + All messages
-4. Create New Project
-5. More
+5. Create New Project
+6. More
   + All nonprofits
   + All projects
   + All developers
@@ -94,7 +94,7 @@ Once I had my idea, it was time to set it into motion. I began by whiteboarding 
   + Projects due today
   + Open projects
   + Close projects
-2.  Your Profile
+2. Your Profile
   + includes github, about me, your projects, edit your profile
 3. Messages
   + Received messages
