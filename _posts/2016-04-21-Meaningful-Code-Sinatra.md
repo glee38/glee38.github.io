@@ -46,10 +46,10 @@ Once I had my idea, it was time to set it into motion. I began by whiteboarding 
   + Our developers
 2. Index page
   + Tell us who you are:
-    + Developer
+    a. Developer
       + sign up
       + login
-    + Nonprofit
+    b. Nonprofit
       + sign up
       + login
 
@@ -64,14 +64,14 @@ Once I had my idea, it was time to set it into motion. I began by whiteboarding 
   + includes tagline, projects, our cause, donate, edit your profile
 3. Your Projects
   +  View projects
-    +  Can click on project to see:
+    a.  Can click on project to see:
       +  title
       +  description
       +  due date
       +  current developers working on said project
-    +  Manage your projects
-    +  Delete your projects
-    +  Projects due today, open, and closed
+    b.  Manage your projects
+    c.  Delete your projects
+    d.  Projects due today, open, and closed
   +  Manage projects
   +  Delete projects
 3. Messages
