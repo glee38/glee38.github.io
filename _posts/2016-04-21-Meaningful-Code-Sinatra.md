@@ -40,8 +40,8 @@ Once I had my idea, it was time to set it into motion. I began by whiteboarding 
 
 1. Navigation Bar
   + About Us
-      + Who we are
-      + Our mission
+    + Who we are
+    + Our mission
   + Our nonprofits
   + Our developers
 2. Index page
@@ -65,10 +65,10 @@ Once I had my idea, it was time to set it into motion. I began by whiteboarding 
 3. Your Projects
   + View projects
     + Can click on project to see:
-      + title
-      + description
-      + due date
-      + current developers working on said project
+      + Title
+      + Description
+      + Due date
+      + Current developers working on said project
     + Manage your projects
     + Delete your projects
     + Projects due today, open, and closed
