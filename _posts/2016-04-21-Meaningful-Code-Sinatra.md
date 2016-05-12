@@ -55,20 +55,20 @@ Once I had my idea, it was time to set it into motion. I began by whiteboarding 
 
 #### As a nonprofit:
 
-1. Homepage
++ Homepage
   + View all available developers
   + Projects due today
   + Open projects
   + Closed projects
-2. Your Profile 
++ Your Profile 
   + includes tagline, projects, our cause, donate, edit your profile
-3. Your Projects
-    +  View projects
-      +  Can click on project to see:
-        +  title
-        +  description
-        +  due date
-        +  current developers working on said project
++ Your Projects
+  +  View projects
+    +  Can click on project to see:
+      +  title
+      +  description
+      +  due date
+      +  current developers working on said project
     +  Manage your projects
     +  Delete your projects
     +  Projects due today, open, and closed
