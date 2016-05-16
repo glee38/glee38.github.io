@@ -43,3 +43,33 @@ For example, let's say you visit Facebook again, login, and are prompted to your
 But what if you changed your user id in your cookie to something else? You click on the developer's console in your browser, find the Facebook cookie, change the user id, and voila! Suddenly, you find yourself logged in as the user with the newly changed user id. If you can hack into someone else's account this easily, doesn't this mean that the same could potentially happen to you? Uh oh.
 
 ### Sessions
+
+Enter sessions, a gift to all techkind. Unlike cookies, which are client-side (your browser) files that contain user information, sessions are server-side (such as Facebook) files that contain user information. Because sessions are stored server-side, a user can no longer easily manipulate their content like they could a cookie. 
+
+Let's break down how they work and why sessions allow maintaining state to be more secure.
+
+**WHAT ARE SESSIONS?**
+
+We've discussed above that HTTP is a stateless protocol, with cookies providing a way to maintain some sort of state (such as the user being logged in, the contents of a user's shopping cart, etc.) between the client and the server. A session is essentially a type of cookie in that it also behaves like a hash, storing user pertinent information in a key referred to as a "session id". The session id usually contains a 32-character string, which is used to identify the hash.
+
+The first time you log in to Facebook, a session id is created on the server side. This session id is used to identify and authenticate you during the time you are browsing their site. Thus, your "logged in" state will be maintained with Facebook until you either logout, or until the session expires (some websites have a timeframe in which a session will expire on its own if you have not explicitly logged out), whichever comes first.
+
+**WHY THEY ARE USEFUL**
+
+Now when you send a request to Facebook to go to another page or look at a different post, every cookie sent to Facebook's server will include your unique session id with which to authenticate you. Facebook will then send back the contents of your request for your browser to render, and will send back your session id with it. This exchange allows a state to be maintained between the client and server without having any revealing information passed through your cookies. Your session id variables can only be seen on the server side.
+
+Let's use a real life example to illustrate what is going on.
+
+**GIMME THAT SHACKSTACK**
+
+After hours of successfully procrastinating on Facebook, you realize that all this hard work has made you pretty darn hungry. There's no food in the fridge, so you decide to go out to the nearest Shake Shack. 
+
+This Shake Shack is so poppin' that they provide every customer a buzzer and receipt number that is used to identify you when your food is ready. You stand on line, order, pay, and the employee hands you a buzzer and receipt. Your number is 33.
+
+After 180 seconds of hunger-induced torture, your buzzer vibrates. Your heart skips a beat and you bring your buzzer and receipt up to the counter. An employee takes a look at the number on your receipt and matches it up to the receipt attached the glorious brown bag containing your order. You don't need to show your credit card, or sign the receipt with your signature again to verify that you are indeed the proud owner of the food baby to be. That was already validated when you first paid for your order, and the ticket number is all you need to prove who you are. You take your food and blast Hall & Oates "You make my dreams come true" on your way home. Well done.
+
+In the example illustrated above, paying and signing your receipt is like logging in with your username and password. The receipt is like the session id that is created by Facebook when you first log in, and that receipt is what is used to identity you for the remainder of your visit. You never have to show your credit card or sign the receipt again - the number on the receipt (like a session id) is all you need for a back and forth exchange between yourself (the client) and the employee (the server). This way, you don't run the risk of identity theft by exposing your credit card numbers multiple times (like a cookie being passed back and forth between requests), and you can access your food with the number issued by Shake Shack.
+
+**CONCLUSION**
+
+As you can see, cookies and sessions are a critical part in maintaining state and allowing for great user experience during your interaction with an application. In the next post, we will discuss how we can use these newly learned concepts to roll our own authentication logic using Rails.
