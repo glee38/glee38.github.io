@@ -66,7 +66,7 @@ After hours of successfully procrastinating on Facebook, you realize that all th
 
 This Shake Shack is so poppin' that they provide every customer a buzzer and receipt number that is used to identify you when your food is ready. You stand on line, order, pay with your credit card, sign the receipt, and the employee hands you a buzzer and an order number. Your number is 33.
 
-![login_sessions](http://i67.tinypic.com/2h5o07s.jpg)
+![login_sessions](http://i67.tinypic.com/vchty.jpg)
 
 After 180 seconds of hunger-induced torture, your buzzer vibrates. Your heart skips a beat and you bring your buzzer and receipt up to the counter. An employee takes a look at the number on your receipt and matches it up to the receipt attached the glorious brown bag containing your order. You don't need to show your credit card, or sign the receipt with your signature again to verify that you are indeed the proud owner of the food baby to be. That was already validated when you first paid for your order, and the ticket number is all you need to prove who you are. You take your food and blast Hall & Oates "You make my dreams come true" on your way home. Well done.
 
