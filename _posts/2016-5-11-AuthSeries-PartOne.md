@@ -70,6 +70,8 @@ This Shake Shack is so poppin' that they provide every customer a buzzer and rec
 
 After 180 seconds of hunger-induced torture, your buzzer vibrates. Your heart skips a beat and you bring your buzzer and receipt up to the counter. An employee takes a look at the number on your receipt and matches it up to the receipt attached the glorious brown bag containing your order. You don't need to show your credit card, or sign the receipt with your signature again to verify that you are indeed the proud owner of the food baby to be. That was already validated when you first paid for your order, and the ticket number is all you need to prove who you are. You take your food and blast Hall & Oates "You make my dreams come true" on your way home. Well done.
 
+![login_sessions_2](http://i63.tinypic.com/108h7rp.jpg)
+
 In the example illustrated above, paying and signing your receipt is like logging in with your username and password. The receipt is like the session id that is created by Facebook when you first log in, and that receipt is what is used to identity you for the remainder of your visit. You never have to show your credit card or sign the receipt again - the number on the receipt (like a session id) is all you need for a back and forth exchange between yourself (the client) and the employee (the server). This way, you don't run the risk of identity theft by exposing your credit card numbers multiple times (like a cookie being passed back and forth between requests), and you can access your food with the number issued by Shake Shack.
 
 **CONCLUSION**
