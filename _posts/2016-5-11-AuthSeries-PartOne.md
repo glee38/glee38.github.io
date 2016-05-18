@@ -64,7 +64,7 @@ Let's use a real life example to illustrate what is going on.
 
 After hours of successfully procrastinating on Facebook, you realize that all this hard work has made you pretty darn hungry. There's no food in the fridge, so you decide to go out to the nearest Shake Shack. 
 
-![login_sessions](http://i65.tinypic.com/2iswih3.jpg)
+![login_sessions](http://i67.tinypic.com/2vuwqq9.jpg)
 
 This Shake Shack is so poppin' that they provide every customer a buzzer and receipt number that is used to identify you when your food is ready. You stand on line, order, pay with your credit card, sign the receipt, and the employee hands you a buzzer and an order number. Your number is 33.
 
