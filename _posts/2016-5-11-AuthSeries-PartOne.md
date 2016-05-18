@@ -56,7 +56,7 @@ The first time you log in to Facebook, a session id is created on the server sid
 
 **WHY THEY ARE USEFUL**
 
-![facebook-login](http://i65.tinypic.com/oardaw.jpg)
+![facebook-login](http://i64.tinypic.com/2432a92.jpg)
 
 Now when you send a request to Facebook to go to another page or look at a different post, every cookie sent to Facebook's server will include your unique session id with which to authenticate you. Facebook will then send back the contents of your request for your browser to render, and will send back your session id with it. This exchange allows a state to be maintained between the client and server without having any revealing information passed through your cookies. Your session id variables can only be seen on the server side.
 
