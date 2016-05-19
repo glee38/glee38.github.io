@@ -22,7 +22,7 @@ My goodness, you just wanted to stalk people in peace, and now this? What the ht
 
 **WHAT IS A COOKIE?**
 
-Cookies are used to maintain some state between the client (your browser, e.g., Google Chrome) and the origin server (where you are sending your requests to be fulfilled - in our example's case, Facebook). 
+Cookies are used to maintain some kind of state between the client (your browser, e.g., Google Chrome) and the origin server (where you are sending your requests to be fulfilled - in our example's case, Facebook). 
 
 **WHY THEY ARE USEFUL**
 
@@ -40,7 +40,7 @@ As useful as cookies are, they also pose a huge security concern. Because they a
 
 For example, let's say you visit Facebook again, login, and are prompted to your homepage. Your browser at this point has a cookie stored containing information about your Facebook login, which was used to authenticate you as a user. Yay! You no longer have to sign in every time you request a different page. 
 
-But what if you changed your user id in your cookie to something else? You click on the developer's console in your browser, find the Facebook cookie, change the user id, and voila! Suddenly, you find yourself logged in as the user with the newly changed user id. If you can hack into someone else's account this easily, doesn't this mean that the same could potentially happen to you? Uh oh.
+But what if you changed your user id in your cookie to something else? You click on the developer's console in your browser, find the Facebook cookie, change the user id, and voila! Suddenly, you find yourself logged in as the user with the newly changed user id. You sly fox, you. But wait - if you can hack into someone else's account this easily, doesn't this mean that the same could potentially happen to you? Uh oh.
 
 ### Sessions
 
