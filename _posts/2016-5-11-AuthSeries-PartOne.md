@@ -26,7 +26,7 @@ Cookies are used to maintain some kind of state between the client (your browser
 
 **WHY THEY ARE USEFUL**
 
-In the scenario above, every time you click on a different link or part of the Facebook website, you are sending a new request to Facebook and therefore, being redirected to login every time. This is because HTTP requests are built to be a "stateless protocol". This means that the server processes each request separately from one another - the "state" of the first request where you logged in, is only longer maintained when you request to go to another page. 
+In the scenario above, every time you click on a different link or part of the Facebook website, you are sending a new request to Facebook and therefore, being redirected to login every time. This is because HTTP requests are built to be a "stateless protocol". This means that the server processes each request separately from one another - the "state" of the first request where you logged in, is no longer maintained when you request to go to another page. 
 
 Thus, every time you ask your browser to load a different page in Facebook, Facebook will ask you to login again because it *doesn't* remember the fact that you already logged in during a previous request.
 
