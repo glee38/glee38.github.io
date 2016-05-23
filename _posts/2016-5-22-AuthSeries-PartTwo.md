@@ -232,7 +232,7 @@ It is finally time to move on to our views!
 
 In `views/users/new`, type in the following:
 
-```ruby
+```html
 <h1>Sign Up</h1>
 
 <%= form_for @user do |f| %>
@@ -272,7 +272,7 @@ We're *almost* there! Next, let's create a link to our sing up page within our a
 
 In `app/views/layouts/application.html.erb`, type in the following line wherever you'd like (I personally like to put this in a `_navigation.html.erb` partial and render it in `layout.html.erb`):
 
-```ruby
+```html
 <%= link_to "Sign Up", new_users_path %>
 ```
 
