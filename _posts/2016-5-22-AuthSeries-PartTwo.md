@@ -284,9 +284,9 @@ If the form submitted does not pass all validations, the sign up form will re-re
 
 ![sign-up-error](http://i67.tinypic.com/21bj0qb.jpg)
 
-[example of login form filled in]
+If the form submitted passes all validations, the user will be persisted to the database, logged in, and redirected to the root page with a success message.
 
-[recipes index page with success message]
+![sign-up-success](http://i67.tinypic.com/xpr6f5.jpg)
 
 At this point, we have successfully managed to create our user and log them in! We. Are. Awesome. 
 
