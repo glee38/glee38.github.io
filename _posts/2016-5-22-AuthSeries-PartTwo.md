@@ -22,7 +22,7 @@ Welcome to **Part 2** of AuthSeries, a series dedicated to authentication in Rai
 
 Let's say we are building a "Recipes" website where users can sign up, login, create, edit and view their own recipes. 
 
-![image of recipes index page](http://i66.tinypic.com/2d960sj.jpg)
+![image of recipes index page](http://i66.tinypic.com/2d960sj.jpg=100x100)
 
 In order to keep track of our users and store their recipes in the database, we will need to create sign up and login forms on your website. But before we do that, let's begin by generating our User model and migrating it to the database.
 
