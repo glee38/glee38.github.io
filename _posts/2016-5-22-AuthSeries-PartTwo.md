@@ -280,7 +280,7 @@ Run `rails s` in your terminal to start up the rails server on `http://localhost
 
 [drawing of recipes index page with sign up link]
 
-[drawing of login form]
+![drawing of signup form](http://i67.tinypic.com/20auge1.jpg)
 
 [example of login form with error]
 
