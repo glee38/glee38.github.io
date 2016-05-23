@@ -278,7 +278,7 @@ In `app/views/layouts/application.html.erb`, type in the following line wherever
 
 Run `rails s` in your terminal to start up the rails server on `http://localhost:3000/` and you should see something similar to:
 
-![click-sign-up](http://i67.tinypic.com/34pb75t.jpg)
+![click-sign-up](http://i67.tinypic.com/30i9lic.jpg)
 
 [example of login form with error]
 
