@@ -421,4 +421,4 @@ And there you have it - you have just built your own Rails authentication system
 
 #### CONCLUSION
 
-In today's post, we've covered how to set up basic user authentication using sessions, validations, and `has_secure_password`. In our next post, I will go over how to build some great helper methods that will allow us to further tailor our authentication system, including `current_user`, `logged_in?`, and `authenticate!`.
+In today's post, we've covered how to set up basic user authentication using sessions, validations, and `has_secure_password`. In our next post, I will go over how to build some great **helper methods** that will allow us to further tailor our authentication system, including `current_user`, `logged_in?`, and `authenticate!`.
