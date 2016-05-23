@@ -280,7 +280,9 @@ Run `rails s` in your terminal to start up the rails server on `http://localhost
 
 ![click-sign-up](http://i67.tinypic.com/30i9lic.jpg)
 
-[example of login form with error]
+If the form submitted does not pass all validations, the sign up form will re-render with the associated error messages.
+
+![sign-up-error](http://i67.tinypic.com/21bj0qb.jpg)
 
 [example of login form filled in]
 
