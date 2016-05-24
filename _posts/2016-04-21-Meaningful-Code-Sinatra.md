@@ -1,13 +1,13 @@
 ---
-layout: single
+layout: post
 title: Meaningful Code
 categories: Development
 comments: true
 draft: false
 ---
-If you've read my first post, then you know that about a month ago, I gave birth to my first ever code child - Teavana CLI Gem. I was in labor for days, but quickly forgot about my exhaustion upon the sweet arrival of my first code baby. Today, I am excited to share the birth of my second code child, Meaningful Code! The labor period was a little longer this time around, but the birth was that much more rewarding. 
-
 <!--more-->
+
+If you've read my first post, then you know that about a month ago, I gave birth to my first ever code child - Teavana CLI Gem. I was in labor for days, but quickly forgot about my exhaustion upon the sweet arrival of my first code baby. Today, I am excited to share the birth of my second code child, Meaningful Code! The labor period was a little longer this time around, but the birth was that much more rewarding. 
 
 After learning about a smooth little fella who goes by the name "Sinatra", I was challenged to create a Sinatra app from scratch. I knew this was the perfect opportunity to create a platform for something I was passionate about, and with my newly aquired skills, I was more than excited to see my idea to fruition. Below, I will take you along my journey, once again sharing my struggles and triumphs, as well as a video walkthrough of my website. I hope you enjoy!
 

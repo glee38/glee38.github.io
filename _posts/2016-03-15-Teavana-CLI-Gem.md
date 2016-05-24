@@ -1,13 +1,13 @@
 ---
-layout: single
+layout: post
 title: My First CLI Gem
 categories: Development
 comments: true
 draft: false
 ---
-For this project, I was challenged to build a CLI gem from scratch. Although the project seemed intimidating at first, the CLI Gem video walkthrough was extremely helpful in giving me the push that I needed to begin building my gem. Below, I have included some notes that were taken from the video, as well as my personal thought process, struggles, and triumphs. You will witness the rewarding fruits of coding labor, and share in the birth of the Teavana-Cli-Gem (which I've started to fondly refer to as my first code child). And while my gem could definitely still use some refactoring and better code structure, I am so excited to share with you what I have learned thus far.
-
 <!--more-->
+
+For this project, I was challenged to build a CLI gem from scratch. Although the project seemed intimidating at first, the CLI Gem video walkthrough was extremely helpful in giving me the push that I needed to begin building my gem. Below, I have included some notes that were taken from the video, as well as my personal thought process, struggles, and triumphs. You will witness the rewarding fruits of coding labor, and share in the birth of the Teavana-Cli-Gem (which I've started to fondly refer to as my first code child). And while my gem could definitely still use some refactoring and better code structure, I am so excited to share with you what I have learned thus far.
 
 ## How to build a CLI gem
 

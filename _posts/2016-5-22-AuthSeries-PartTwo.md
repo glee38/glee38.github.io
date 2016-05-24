@@ -4,10 +4,9 @@ title: AuthSeries Pt. 2 - Creating Your Own Authentication
 categories: Development
 comments: true
 ---
+<!--more-->
 
 Welcome to **Part 2** of AuthSeries, a series dedicated to authentication in Rails. In today's post, I will go over how to go about creating your own authentication logic from scratch. Rails has a lot of useful gems that get this job done for you, but I think it's always useful to understand what is going on under the hood before using gems that abstract away these basic, but very important principles.
-
-<!--more-->
 
 #### OUR GOAL TODAY:
 
@@ -43,7 +42,7 @@ Running the above command  will generate the `User` model and `UsersController`.
 
 Now, go inside of your User model and add `has_secure_password` like so:
 
-```ruby
+{% highlight ruby %}
 class User < ActiveRecord::Base
 has_many :recipes
 has_secure_password
@@ -51,7 +50,7 @@ has_secure_password
 # more code to come 
 
 end
-```
+{% endhighlight %}
 
 The `has_secure_password` will do the following:
 
@@ -70,10 +69,10 @@ Just by typing in one little line, Rails automagically generated validations and
 
 To utilize `has_secure_password`, uncomment this line in your `Gemfile`:
 
-```ruby
+{% highlight ruby %}
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-```
+{% endhighlight %}
 
 Then, run `bundle install` in your terminal. The `bcrypt` gem will hash a user's password and stores it securely in your database.
 
@@ -83,7 +82,7 @@ Now that we have successfully set up our params, let's go back inside the User m
 
 For example:
 
-```ruby
+{% highlight ruby %}
 class User < ActiveRecord::Base
 has_many :recipes
 has_secure_password
@@ -93,7 +92,7 @@ validates_presence_of :email
 # ... etc.
 
 end
-```
+{% endhighlight %}
 
 You do not need to add validations for the `password` attribute since they are automatically added by `has_secure_password`. Woo!
 
@@ -105,7 +104,7 @@ What does this mean exactly?
 
 In your `UsersController`, type in the following:
 
-```ruby
+{% highlight ruby %}
 class UsersController < ApplicationController
 
 # we will add actions here later
@@ -116,7 +115,7 @@ def user_params
   params.require(:user).permit(:email, :password, 
   :password_confirmation)
 end
-```
+{% endhighlight %}
 
 **Let's break down the above code:**
 
@@ -137,7 +136,7 @@ The strong params plugin not only sanitizes your params, but it allows for flexi
 
 For example:
 
-```ruby
+{% highlight ruby %}
 def user_params
   if current_user.admin?
     params.require(:user).permit(:email, :password, 
@@ -147,7 +146,7 @@ def user_params
     :password_confirmation)
   end
 end
-```
+{% endhighlight %}
 
 **NOTE**: If you have googled around about how to set up authentication in Rails, you may have read about `attr_accessible`. This method has been deprecated in Rails 4 in favor of strong params as the latter is more flexible in mass assignment. 
 
@@ -157,7 +156,7 @@ Next, we will write some actions in our `UsersController` to handle signing up a
 
 In `UsersController`, type in the following:
 
-```ruby
+{% highlight ruby %}
 class UsersController < ApplicationController
   def new
     @user = User.new
@@ -170,13 +169,13 @@ private
   end
 
 end
-```
+{% endhighlight %}
 
 Here, we are setting up an instance variable of `@user` that our view will be able to access later on in order to build our user sign up form. 
 
 Next, let's build our `create` action:
 
-```ruby
+{% highlight ruby %}
 class UsersController < ApplicationController
   def new
     @user = User.new
@@ -199,7 +198,7 @@ class UsersController < ApplicationController
     :password_confirmation)
   end
 end
-```
+{% endhighlight %}
 
 **Let's break down what is happening on within our `create` method:**
 
@@ -218,12 +217,12 @@ Now that we have successfully set up our `User` actions, let's write out some ro
 
 In `config/routes.rb`, type in the following:
 
-```ruby
+{% highlight ruby %}
 Rails.application.routes.draw do
   resources :users
   resources :recipes
 end
-```
+{% endhighlight %}
 
 The `resources` keyword will create restful routes for the specified controllers. To view these routes, type in `rake routes` or `rake route | grep users` in terminal. 
 
@@ -233,7 +232,7 @@ It is finally time to move on to our views!
 
 In `views/users/new`, type in the following:
 
-```html
+{% highlight html %}
 <h1>Sign Up</h1>
 
 <%= form_for @user do |f| %>
@@ -265,7 +264,7 @@ In `views/users/new`, type in the following:
   
   <%= f.submit%>
 <% end %>
-```
+{% endhighlight %}
 
 You can, of course, customize your form in whatever way you'd like. Another option is to write your form in a partial, such as `_form.html.erb` and simply render the partial within your `new.html.erb` view.
 
@@ -273,7 +272,7 @@ We're *almost* there! Next, let's create a link to our sing up page within our a
 
 In `app/views/layouts/application.html.erb`, type in the following line wherever you'd like (I personally like to put this in a `_navigation.html.erb` partial and render it in `layout.html.erb`):
 
-```html
+```
 <%= link_to "Sign Up", new_users_path %>
 ```
 
@@ -305,7 +304,7 @@ This will generate your `SessionsController`, where our authentication will actu
 
 In `SessionsController`, type in the following:
 
-```ruby
+{% highlight ruby %}
 class SessionsController < ApplicationController
   
   def new
@@ -333,7 +332,7 @@ class SessionsController < ApplicationController
   end
   
 end
-```
+{% endhighlight %}
 
 **Let's break down what is going on within our `create` action:**
 
@@ -353,7 +352,7 @@ Going back into `routes.rb`, let's define a few routes to help us out.
 
 2. OR create custom routes as shown below:
 
-```ruby
+{% highlight ruby %}
 Rails.application.routes.draw do
   resources :users
   resources :recipes
@@ -367,7 +366,7 @@ Rails.application.routes.draw do
   delete '/logout' => 'sessions#destroy'
 
 end
-```
+{% endhighlight %}
 
 #### STEP 10: `VIEWS/SESSIONS`
 
@@ -375,7 +374,7 @@ Next up are our views!
 
 In `app/views/sessions/new.html.erb`, type in the following:
 
-```html
+{% highlight html %}
 <%= form_for @user, url: {action: "create"} do |f| %>
   <p>
   <%= f.label :email %><br>
@@ -389,16 +388,16 @@ In `app/views/sessions/new.html.erb`, type in the following:
   
   <%= f.submit "Log In" %>
 <% end %>
-```
+{% endhighlight %}
 
 This will render our login form when a user visits `www.your-site-name.com/login`, prompting the user to input their email and password with which to authenticate them.
 
 Finally, we will add the following links to our `_navigation.html.erb`:
 
-```html
+{% highlight html %}
 <%= link_to "Login", login_path %>
 <%= link_to "Logout", logout_path, :method=>'delete' %>
-```
+{% endhighlight %}
 
 Now when we go back to `http://localhost:3000/`, you should see:
 

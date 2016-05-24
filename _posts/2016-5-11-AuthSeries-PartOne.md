@@ -1,17 +1,16 @@
 ---
-layout: single
+layout: post
 title: AuthSeries Pt. 1 - Authentication Basics
 categories: Development
 comments: true
 ---
+<!--more-->
 
 Welcome to **Part 1** of AuthSeries, a series dedicated to authentication in Rails. WOO! In today's post, I will go over a few programming concepts that are crucial in understanding authentication as a whole.
 
 #### Our goal today:
 1. Learn about cookies
 2. Learn about sessions
-
-<!--more-->
 
 ### Cookies
 
