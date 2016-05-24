@@ -2,11 +2,12 @@
 layout: post
 title: AuthSeries Pt. 2 - Creating Your Own Authentication
 categories: Development
-excerpt: "Part 2 of the Rails Authentication Series - Building Your Own Authentication Logic"
 comments: true
 ---
 
 Welcome to **Part 2** of AuthSeries, a series dedicated to authentication in Rails. In today's post, I will go over how to go about creating your own authentication logic from scratch. Rails has a lot of useful gems that get this job done for you, but I think it's always useful to understand what is going on under the hood before using gems that abstract away these basic, but very important principles.
+
+<!--more-->
 
 #### OUR GOAL TODAY:
 

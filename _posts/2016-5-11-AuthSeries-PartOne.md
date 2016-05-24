@@ -1,8 +1,7 @@
 ---
-layout: post
+layout: single
 title: AuthSeries Pt. 1 - Authentication Basics
 categories: Development
-excerpt: "Part 1 of the Rails Authentication Series - Cookies and Sessions"
 comments: true
 ---
 
@@ -11,6 +10,8 @@ Welcome to **Part 1** of AuthSeries, a series dedicated to authentication in Rai
 #### Our goal today:
 1. Learn about cookies
 2. Learn about sessions
+
+<!--more-->
 
 ### Cookies
 

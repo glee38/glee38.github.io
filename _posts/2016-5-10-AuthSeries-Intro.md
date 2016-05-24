@@ -1,17 +1,15 @@
 ---
-layout: post
+layout: single
 title: Rails Authentication Series - Intro
 categories: Development
-excerpt: "A series dedicated to exploring different methods of figuring out a user's authenticity. We got your back."
 comments: true
 draft: false
 ---
-
-# Rails Authentication Series
-
 #### HEY, IS THAT YOU?
 
 As I continue to venture deeper into the magical land of Rails, I thought it would be a good idea to write about the different methods of authentication available for developers. The concept of authentication itself is not very difficult (figuring out if a user is really who they say they are), but I've found that proper set up and configuration is crucial to laying the foundation for great authentication flow. 
+
+<!--more-->
 
 I am, of course, no expert, but here are some of the options that I have learned for implementing authentication thus far:
 
