@@ -401,17 +401,17 @@ Finally, we will add the following links to our `_navigation.html.erb`:
 
 Now when we go back to `http://localhost:3000/`, you should see:
 
-[login, sign up, logout in navbar]
+![updated-navbar](http://i67.tinypic.com/3496r7a.jpg)
 
-Clicking on "login" will take us to `http://localhost:3000/login`:
+Clicking on "login" will take us to `http://localhost:3000/login`.
 
-[login form]
+If the form submitted does not pass all validations, the login form will re-render with the associated error messages.
 
-[filling out login form]
+![login-failure](http://i66.tinypic.com/fyj09i.jpg)
 
-[if password is incorrect / display error message]
+If the form submitted passes all validations, the user will be persisted to the database, logged in, and redirected to the root page with a success message.
 
-[if login is successful / login success message]
+![login-success](http://i64.tinypic.com/14d1yky.jpg)
 
 Clicking on "logout" will post to `http://localhost:3000/logout` and redirect the user to the `root_path`:
 
