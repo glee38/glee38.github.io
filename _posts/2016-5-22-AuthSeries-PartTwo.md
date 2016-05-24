@@ -407,7 +407,7 @@ Clicking on "login" will take us to `http://localhost:3000/login`.
 
 If the form submitted does not pass all validations, the login form will re-render with the associated error messages.
 
-![login-failure](http://i66.tinypic.com/fyj09i.jpg)
+![login-failure](http://i66.tinypic.com/15334gj.jpg)
 
 If the form submitted passes all validations, the user will be persisted to the database, logged in, and redirected to the root page with a success message.
 
